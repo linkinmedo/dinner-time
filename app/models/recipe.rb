@@ -4,4 +4,12 @@ class Recipe < ApplicationRecord
   belongs_to :author
   belongs_to :budget
   belongs_to :difficulty
+
+  def self.filter(tags)
+    if tags
+      joins(:tags).where(tags: { id: tags })
+    else
+      where(nil)
+    end
+  end
 end

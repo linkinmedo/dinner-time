@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_18_151909) do
+ActiveRecord::Schema.define(version: 2022_02_19_034511) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2022_02_18_151909) do
   end
 
   create_table "recipes", force: :cascade do |t|
-    t.float "rate"
+    t.float "rate", default: 0.0
     t.text "author_tip"
     t.string "prep_time"
     t.string "name"
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 2022_02_18_151909) do
     t.string "cook_time"
     t.string "total_time"
     t.string "image"
-    t.integer "nb_comments"
+    t.integer "nb_comments", default: 0
     t.bigint "author_id", null: false
     t.bigint "budget_id", null: false
     t.bigint "difficulty_id", null: false
