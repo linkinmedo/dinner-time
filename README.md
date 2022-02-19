@@ -1,24 +1,15 @@
-# README
+# Dinner Time
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the initial relase of the recipe discovery app "Dinner Time"
 
-Things you may want to cover:
+## Tech Stack
 
-* Ruby version
+* Ruby 3.1
+* Rails 6.1
+* React 17
+* PostgreSql 14.2
 
-* System dependencies
+## Run Locally
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Make sure to update the database.yml to fit your db setup
+* The usual bundle install, yarn install, db:create/migrate/seed
