@@ -56,7 +56,7 @@ const RecipeCard = ({ recipe }) => {
                 ))}
               </Stack> : null
             }
-            <Stack direction="row" spacing={1}>
+            <Stack style={{ flexWrap: 'wrap' }} direction="row" spacing={1}>
               <Chip variant="outlined" label={recipe.total_time} icon={<AccessTimeIcon />} />
               <Chip variant="outlined" label={recipe.budget?.name} icon={<AttachMoneyIcon />} />
               <Chip variant="outlined" label={recipe.people_quantity} icon={<PersonOutlineIcon />} />
